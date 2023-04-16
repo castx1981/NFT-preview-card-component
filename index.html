@@ -3,31 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
   <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<!-- background container -->
+<div class="flex items-center justify-center min-h-screen bg-main-dark-blue">
+  <!-- card container -->
+  <div class="w-[327px] p-6 bg-card-dark-blue rounded-xl shadow-card">
+    <!-- banner -->
+    <a class="block relative group" href="#" title="equilibrium">
+      <img class="rounded-lg" src="images/image-equilibrium.jpg" alt=""/>
+      <div class="w-[279px] h-[279px] hidden absolute z-10 left-0 top-0 bg-cyan/50 bg-view bg-center bg-no-repeat rounded-lg group-hover:block"></div>
+    </a>
+    <!-- content -->
+    <div class="mt-6">
+      <a class="inline-block font-semibold text-xl text-white hover:text-cyan transition-colors duration-500" href="#">
+        Equilibrium #3429
+      </a>
+      <p class="mt-4 font-light text-base text-soft-blue">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <div class="mt-4 pb-4 flex items-center border-b border-b-line-dark-blue">
+        <img class="mr-1.5" src="images/icon-ethereum.svg" alt=""/>
+        <p class="text-cyan">0.041 ETH</p>
+        <img class="ml-auto mr-1.5" src="images/icon-clock.svg" alt=""/>
+        <p class="text-soft-blue">3 days left</p>
+      </div>
+      <div class="mt-4 flex items-center">
+        <div class="mr-4 ring-1 ring-white/50 rounded-full">
+          <img class="w-8 h-8" src="images/image-avatar.png" alt="">
+        </div>
+        <p>
+          <span class="text-soft-blue">Creation of </span><a class="text-white hover:text-cyan transition-colors duration-500" href="#">Jules Wyvern</a>
+        </p>
+      </div>
+    </div>
   </div>
+</div>
+
 </body>
 </html>
