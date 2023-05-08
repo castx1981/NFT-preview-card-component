@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .view-mask {
+        background-image: url("images/icon-view.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: hsla(178, 100%, 50%, 0.5);
+    }
+}

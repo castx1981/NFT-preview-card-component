@@ -15,11 +15,16 @@ module.exports = {
         'card-dark-blue': 'hsl(216, 50%, 16%)',
         'line-dark-blue': 'hsl(215, 32%, 27%)',
       },
-      backgroundImage: {
-        'view': "url('images/icon-view.svg')"
+      fontSize: {
+        'sm': ['15px', '19px'],
+        'lg': ['18px', '26px'],
+        'xl': ['22px', '28px'],
+      },
+      borderRadius: {
+        'xl': '15px',
       },
       boxShadow: {
-        'card': '0 44px 60px -5px hsl(217, 88%, 4%)',
+        'card': '0 25px 50px hsla(0, 0%, 0%, 0.1)',
       }
     }
   },
